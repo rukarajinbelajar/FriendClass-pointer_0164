@@ -23,3 +23,11 @@ void input(){
     }
     friend void tampilkanKeliling(LayangLayang objLayang, BelahKetupat objBelah);
 };
+
+class BelahKetupat {
+    private:
+    double d1, d2, sisi;
+    public:
+    double hitungluas() {
+        return 0.5 * d1 * d2;
+    }
