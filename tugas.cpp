@@ -50,3 +50,21 @@ void tampilkanKeliling(LayangLayang objLayang, BelahKetupat objBelah)
     cout << "Keliling Layang-Layang : " << kelilingLayang << endl;
     cout << "Keliling Belah Ketupat : " << kelilingBelah << endl;
 }
+
+int main() {
+    LayangLayang objLayang;
+    BelahKetupat objBelah;
+    
+    objLayang.input();
+    cout << endl;
+    objBelah.input();
+
+    cout << "\n--- Hasil Luas ---" << endl;
+    cout << "Luas Layang-Layang     : " << objLayang.hitungluas() << endl;
+    cout << "Luas Belah Ketupat     : " << objBelah.hitungluas() << endl;
+
+    cout << "\n--- Hasil Keliling ---" << endl;
+    tampilkanKeliling(objLayang, objBelah);
+    
+    return 0;
+}
