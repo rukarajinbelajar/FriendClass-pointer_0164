@@ -28,7 +28,7 @@ class BelahKetupat {
     private:
     double d1, d2, sisi;
     public:
-    double hitungluas() {
+    double hitungLuas() {
         return 0.5 * d1 * d2;
     }
  void input() {
@@ -60,11 +60,10 @@ int main() {
     objBelah.input();
 
     cout << "\n--- Hasil Luas ---" << endl;
-    cout << "Luas Layang-Layang     : " << objLayang.hitungluas() << endl;
-    cout << "Luas Belah Ketupat     : " << objBelah.hitungluas() << endl;
+    cout << "Luas Layang-Layang     : " << objLayang.hitungLuas() << endl;
+    cout << "Luas Belah Ketupat     : " << objBelah.hitungLuas() << endl;
 
     cout << "\n--- Hasil Keliling ---" << endl;
     tampilkanKeliling(objLayang, objBelah);
-    
     return 0;
 }
