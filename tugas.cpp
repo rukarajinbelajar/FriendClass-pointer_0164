@@ -31,3 +31,13 @@ class BelahKetupat {
     double hitungluas() {
         return 0.5 * d1 * d2;
     }
+ void input() {
+    cout << "Masukkan diagonal 1 Belah Ketupat : " << endl; 
+    cin >> d1;
+    cout << "Masukkan diagonal 2 Belah Ketupat : " << endl; 
+    cin >> d2;
+    cout << "Masukkan sisi Belah Ketupat       : " << endl;
+    cin >> sisi;
+ }
+ friend void tampilkanKeliling(LayangLayang objLayang, BelahKetupat objBelah);
+};
